@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-dev = "fastapi dev main.py"
+dev = "fastapi dev app/main.py"
 
 [packages]
 fastapi = "*"
