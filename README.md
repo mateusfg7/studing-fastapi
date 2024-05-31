@@ -28,10 +28,10 @@ Esse comando instala todas as dependências do projeto, incluindo as dependênci
 
 ### Rodando o projeto
 
-Para rodar o projeto, você pode usar o comando:
+Para rodar o projeto no modo desenvolvimento, você pode usar o comando:
 
 ```bash
-pipenv run start
+pipenv run dev
 ```
 
 Esse comando inicia o servidor de desenvolvimento do FastAPI. Você pode acessar a documentação da API em `http://localhost:8000/docs`.
@@ -39,3 +39,4 @@ Esse comando inicia o servidor de desenvolvimento do FastAPI. Você pode acessar
 ## Links de referência
 - **FastAPI**: [_https://fastapi.tiangolo.com/_](https://fastapi.tiangolo.com/)
 - **Pipenv**: [_https://pipenv.pypa.io/en/latest/_](https://pipenv.pypa.io/en/latest/)
+- **Pydantic**: [_https://docs.pydantic.dev/latest/_](https://docs.pydantic.dev/latest/)
