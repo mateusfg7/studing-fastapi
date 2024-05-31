@@ -18,6 +18,6 @@ git config --global alias.lg "log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Cr
 git config --global alias.rollback "reset --soft HEAD~1"
 
 # Install Python Packages
-if [-e requirements.txt]; then
-    pip install --user -r requirements.txt
-fi
+# if [-e requirements.txt]; then
+#     pip install --user -r requirements.txt
+# fi
