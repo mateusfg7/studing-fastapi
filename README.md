@@ -39,3 +39,4 @@ Esse comando inicia o servidor de desenvolvimento do FastAPI. Você pode acessar
 ## Links de referência
 - **FastAPI**: [_https://fastapi.tiangolo.com/_](https://fastapi.tiangolo.com/)
 - **Pipenv**: [_https://pipenv.pypa.io/en/latest/_](https://pipenv.pypa.io/en/latest/)
+- **Pydantic**: [_https://docs.pydantic.dev/latest/_](https://docs.pydantic.dev/latest/)
