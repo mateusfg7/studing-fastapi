@@ -1,7 +1,8 @@
 from fastapi import APIRouter
 from typing import Union
 
-from app.database import Todo, todos
+from app.models.todo import Todo
+from app.database import todos
 
 router = APIRouter()
 

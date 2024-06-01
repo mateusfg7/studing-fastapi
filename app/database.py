@@ -5,15 +5,10 @@ Por enquanto esse é apenas um exemplo de um banco de dados salvo na memória, a
 Mais pra frente será substituido por um SGBD, provavelmente PostegreSQL.
 """
 
-from pydantic import BaseModel
 from datetime import datetime
 
-class Todo(BaseModel):
-    id: int
-    title: str
-    completed: bool
-    created_at: datetime
-    updated_at: datetime
+from app.models.todo import Todo
+
 
 todos: list[Todo] = [
     {
@@ -38,4 +33,3 @@ todos: list[Todo] = [
         'update_at': datetime.now()
     },
 ]
-    
