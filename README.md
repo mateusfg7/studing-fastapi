@@ -40,6 +40,44 @@ pipenv run dev
 
 Esse comando inicia o servidor de desenvolvimento do FastAPI. Você pode acessar a documentação da API em `http://localhost:8000/docs`.
 
+
+## Estrutura do projeto
+
+<!--
+https://text.mateusf.com/text/tree?rootDot=true&trailingDirSlash=true&fullPath=false
+```
+.devcontainer
+  devcontainer.json
+  post-start.sh
+app
+  models/
+  routes/
+  main.py
+  database.py
+.gitignore
+Pipfile
+Pipfile.lock
+README.md
+```
+-->
+
+```bash
+.
+├── .devcontainer/        # Configurações do DevContainer
+│   ├── devcontainer.json # Configurações do DevContainer
+│   └── post-start.sh     # Script de pós-start do DevContainer
+├── app/                  # Código fonte da aplicação
+│   ├── models/           # Modelos de dados
+│   ├── routes/           # Rotas da API
+│   ├── main.py           # Arquivo principal da aplicação
+│   └── database.py       # Configuração do banco de dados
+├── .gitignore            # Arquivos e diretórios ignorados pelo Git
+├── Pipfile               # Arquivo de definição de dependências e scripts
+├── Pipfile.lock          # Arquivo de lock das dependências
+└── README.md             # Documentação do projeto
+```
+
+
 ## Links de referência
 - **FastAPI**: [_https://fastapi.tiangolo.com/_](https://fastapi.tiangolo.com/)
 - **Pipenv**: [_https://pipenv.pypa.io/en/latest/_](https://pipenv.pypa.io/en/latest/)
