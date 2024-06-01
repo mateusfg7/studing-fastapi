@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from app.models.todo import Todo
-from app.database import todos
+from models.db import Todo
+from database import todos
 
 router = APIRouter()
 

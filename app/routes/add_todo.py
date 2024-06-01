@@ -3,8 +3,10 @@ from fastapi import APIRouter
 from datetime import datetime
 from pydantic import BaseModel
 
-from app.database import todos
-from app.models.todo import Todo
+from database import todos
+
+from models.db import Todo
+
 
 router = APIRouter()
 
