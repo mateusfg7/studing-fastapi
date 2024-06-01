@@ -5,6 +5,7 @@ name = "pypi"
 
 [scripts]
 dev = "fastapi dev app/main.py"
+format = "autopep8 --in-place --aggressive --recursive app"
 
 [packages]
 fastapi = "*"
