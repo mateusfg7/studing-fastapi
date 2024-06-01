@@ -38,8 +38,9 @@ def toggle_completed(todo_id: int):
     completed = None
     for todo in todos:
         if todo['id'] == todo_id:
-            updated_todos.append(
-                {**todo, 'completed': not todo['completed'], 'updated_at': datetime.now()})
+            updated_todos.append({**todo,
+                                  'completed': not todo['completed'],
+                                  'updated_at': datetime.now()})
             completed = not todo['completed']
         else:
             updated_todos.append(todo)
@@ -53,7 +54,7 @@ def filter_todos(todo: Todo, completed: bool):
 
 
 def list_all(completed: Union[bool, None] = None) -> list[Todo]:
-    if completed == None:
+    if completed is None:
         return todos
     else:
         return list(filter(
