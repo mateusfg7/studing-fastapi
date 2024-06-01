@@ -1,11 +1,11 @@
 from fastapi import APIRouter
 
 from datetime import datetime
-from pydantic import BaseModel
 
 from database import todos
 
 from models.db import Todo
+from models.dto import NewTodo
 
 
 router = APIRouter()
@@ -16,11 +16,6 @@ def id_is_duplicated(todos: list[Todo], id: int):
         return True
     else:
         return False
-
-
-class NewTodo(BaseModel):
-    id: int
-    title: str
 
 
 @router.post('/add')
