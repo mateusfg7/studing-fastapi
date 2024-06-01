@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from app.routes import list_todos
-from app.routes import add_todo
-from app.routes import complete_todo
+from routes import list_todos
+from routes import add_todo
+from routes import complete_todo
 
 app = FastAPI()
 
