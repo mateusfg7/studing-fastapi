@@ -7,6 +7,7 @@ Respositório com API de exemplo usando FastAPI no Python
 Será um projeto de to-do list, onde será possível criar, listar, atualizar e deletar tarefas. O banco de dados utilizado será o PostgreSQL.
 
 ## Progresso
+
 - [x] Criar _TO-DO_
 - [x] Listar _TO-DOs_
 - Atualizar _TO-DOs_
@@ -17,6 +18,7 @@ Será um projeto de to-do list, onde será possível criar, listar, atualizar e 
 ## Setup
 
 ### Gerenciador de dependências
+
 Esse projeto de exemplo usa [Pipenv](https://pipenv.pypa.io/en/latest/) como gerenciador de dependências. Você precisa ter o Pipenv instalado na sua máquina para rodar o projeto.
 
 Para instalar o Pipenv, você pode usar o comando:
@@ -48,7 +50,6 @@ pipenv run dev
 
 Esse comando inicia o servidor de desenvolvimento do FastAPI. Você pode acessar a documentação da API em `http://localhost:8000/docs`.
 
-
 ## Estrutura do projeto
 
 <!--
@@ -59,6 +60,8 @@ https://text.mateusf.com/text/tree?rootDot=true&trailingDirSlash=true&fullPath=f
   post-start.sh
 app
   models/
+    database.py
+    dto.py
   routes/
   main.py
   database.py
@@ -76,6 +79,8 @@ README.md
 │   └── post-start.sh     # Script de pós-start do DevContainer
 ├── app/                  # Código fonte da aplicação
 │   ├── models/           # Modelos de dados
+│   │   ├── database.py   # Modelos de entidades do banco de dados
+│   │   └── dto.py        # Modelos de transferência de dados (Data-Transfer Objects)
 │   ├── routes/           # Rotas da API
 │   ├── main.py           # Arquivo principal da aplicação
 │   └── database.py       # Configuração do banco de dados
@@ -85,8 +90,8 @@ README.md
 └── README.md             # Documentação do projeto
 ```
 
-
 ## Links de referência
+
 - **FastAPI**: [_https://fastapi.tiangolo.com/_](https://fastapi.tiangolo.com/)
 - **Pipenv**: [_https://pipenv.pypa.io/en/latest/_](https://pipenv.pypa.io/en/latest/)
 - **Pydantic**: [_https://docs.pydantic.dev/latest/_](https://docs.pydantic.dev/latest/)
