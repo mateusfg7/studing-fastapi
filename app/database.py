@@ -7,7 +7,7 @@ Mais pra frente será substituido por um SGBD, provavelmente PostegreSQL.
 
 from datetime import datetime
 
-from app.models.todo import Todo
+from models.db import Todo
 
 
 todos: list[Todo] = [
