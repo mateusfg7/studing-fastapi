@@ -6,6 +6,14 @@ Respositório com API de exemplo usando FastAPI no Python
 
 Será um projeto de to-do list, onde será possível criar, listar, atualizar e deletar tarefas. O banco de dados utilizado será o PostgreSQL.
 
+## Progresso
+- [x] Criar _TO-DO_
+- [x] Listar _TO-DOs_
+- Atualizar _TO-DOs_
+  - [ ] Renomear
+  - [x] Marcar como completo/incompleto
+- [ ] Apagar _TO-DO_
+
 ## Setup
 
 ### Gerenciador de dependências
