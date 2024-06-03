@@ -4,31 +4,15 @@ from typing import Union
 from models.db import Todo
 from database import todos
 
+from repositories import todo_repository
+
 
 def add(id: int, title: str) -> Todo:
-    todo: Todo = {
-        'id': id,
-        'title': title,
-        'completed': False,
-        'created_at': datetime.now(),
-        'updated_at': datetime.now()
-    }
-    todos.append(todo)
-
-    return todo
+    return todo_repository.add(id, title, False)
 
 
 def get_by_id(id: int) -> Todo | None:
-    founded_todos: list[Todo] = []
-
-    for todo in todos:
-        if todo['id'] == id:
-            founded_todos.append(todo)
-
-    if len(founded_todos) == 0:
-        return None
-    else:
-        return founded_todos[0]
+    return todo_repository.get_by_id(id)
 
 
 def toggle_completed(todo_id: int):
